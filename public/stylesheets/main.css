@@ -20,6 +20,10 @@ body {
   font-family: "cherpRegular";
   font-size: 16px;
 }
+.container {
+  display: flex;
+  justify-content: center;
+}
 /* light mode */
 .light {
   background-color: #ffffff;
@@ -39,6 +43,9 @@ body {
 }
 .nav {
   width: 251px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .nav-top {
   padding: 0 12px;
@@ -73,6 +80,7 @@ body {
 }
 .nav-link {
   display: inline-flex;
+  box-sizing: border-box;
   font-family: "cherpRegular";
   padding: 12px;
   line-height: 24px;
@@ -111,4 +119,54 @@ body {
 .tweet-btn:hover {
   background-color: rgb(15, 147, 228);
   transition: all 200ms;
+}
+.placeholder {
+  content: "";
+  margin-left: 20px;
+  background-color: #ebe8e8;
+  border-radius: 20px;
+  width: 990px;
+  height: 100vh;
+}
+.profile {
+  width: 100%;
+  height: 64px;
+  margin: 12px 0;
+}
+.profile-content {
+  box-sizing: border-box;
+  padding: 12px;
+  border-radius: 9999px;
+  height: 100%;
+  display: flex;
+  cursor: pointer;
+  transition: all 200ms;
+}
+.profile-content:hover {
+  background-color: rgba(1, 1, 1, 0.1);
+  transition: all 200ms;
+}
+.profile-content img {
+  height: 100%;
+  border-radius: 9999px;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 12px;
+}
+.user-info h4 {
+  font-family: "cherpBold";
+  margin-bottom: 4px;
+}
+.user-info .username {
+  color: rgb(83, 100, 113);
+}
+.profile-content svg {
+  width: 47px;
+  fill: black;
+  height: 1.25em;
+  align-self: center;
+  justify-self: end;
 }
