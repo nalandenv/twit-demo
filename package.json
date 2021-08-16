@@ -1,0 +1,19 @@
+{
+  "name": "twitter-clone",
+  "version": "0.0.1",
+  "description": "This is a twitter home clone.",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nalandenv/twitter-home.git"
+  },
+  "keywords": [
+    "twitter"
+  ],
+  "author": "Nikhil Nalande",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nalandenv/twitter-home/issues"
+  },
+  "homepage": "https://github.com/nalandenv/twitter-home#readme"
+}
