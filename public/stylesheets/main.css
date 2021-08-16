@@ -1,4 +1,23 @@
+/* Importing font from storage which is used for custom icons on the webpage */
+@font-face {
+  font-family: "cherpRegular";
+  src: url("../assets/fonts/chirp-regular-web.woff");
+}
+@font-face {
+  font-family: "cherpMedium";
+  src: url("../assets/fonts/chirp-medium-web.woff");
+}
+@font-face {
+  font-family: "cherpHeavy";
+  src: url("../assets/fonts/chirp-heavy-web.woff");
+}
+@font-face {
+  font-family: "cherpBold";
+  src: url("../assets/fonts/chirp-bold-web.woff");
+}
+
 body {
+  font-family: "cherpRegular";
   font-size: 16px;
 }
 /* light mode */
@@ -14,7 +33,15 @@ body {
 
 /* header - left section */
 .header {
-  width: 250px;
+  width: 275px;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav {
+  width: 251px;
+}
+.nav-top {
+  padding: 0 12px;
 }
 .logo-parent {
   width: 52px;
@@ -28,6 +55,7 @@ body {
   height: 52px;
   border-radius: 100%;
   cursor: pointer;
+  transition: all 200ms;
 }
 .logo-parent .logo:hover {
   background-color: rgba(29, 161, 242, 0.1);
@@ -37,4 +65,50 @@ body {
   box-sizing: border-box;
   padding: 20%;
   fill: rgb(29, 161, 242);
+}
+
+.nav-link-container {
+  box-sizing: border-box;
+  width: 100%;
+}
+.nav-link {
+  display: inline-flex;
+  font-family: "cherpRegular";
+  padding: 12px;
+  line-height: 24px;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.tweet-btn span {
+  margin: 0 auto;
+}
+.nav-link:hover {
+  background-color: rgba(1, 1, 1, 0.1);
+  transition: all 200ms;
+}
+.nav-link svg {
+  height: 26px;
+}
+.bold {
+  font-family: "cherpBold";
+}
+.nav-link .link-label {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 16px;
+  align-self: center;
+}
+.tweet-btn {
+  width: 100%;
+  margin: 2px 0;
+  background-color: rgb(29, 161, 242);
+  color: white;
+  font-size: 17px;
+  transition: all 200ms;
+}
+.tweet-btn:hover {
+  background-color: rgb(15, 147, 228);
+  transition: all 200ms;
 }
