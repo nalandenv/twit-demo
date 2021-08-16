@@ -1,3 +1,40 @@
 body {
-  background-color: peachpuff;
+  font-size: 16px;
+}
+/* light mode */
+.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+/* dark mode */
+.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* header - left section */
+.header {
+  width: 250px;
+}
+.logo-parent {
+  width: 52px;
+  height: 56px;
+  box-sizing: border-box;
+  padding: 2px 0;
+  align-items: center;
+}
+.logo-parent .logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.logo-parent .logo:hover {
+  background-color: rgba(29, 161, 242, 0.1);
+  transition: all 200ms;
+}
+#twitter-logo {
+  box-sizing: border-box;
+  padding: 20%;
+  fill: rgb(29, 161, 242);
 }
