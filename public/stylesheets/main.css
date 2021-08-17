@@ -19,11 +19,12 @@
 body {
   font-family: "cherpRegular";
   font-size: 16px;
+  overflow: hidden;
 }
 .container {
   display: flex;
   justify-content: center;
-  overflow: auto;
+  overflow: hidden;
 }
 /* light mode */
 .light {
@@ -46,7 +47,8 @@ body {
   justify-content: flex-end;
 }
 .nav {
-  width: 251px;
+  max-width: 251px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -171,29 +173,40 @@ body {
 .main-body {
   display: flex;
   position: relative;
+  overflow: hidden;
   flex: 7;
   border-radius: 20px;
   height: 100vh;
 }
 .section-feed-trending {
   display: flex;
+  overflow-y: scroll;
   justify-content: space-between;
-  width: 990px;
+  max-width: 990px;
+  width: 100%;
   content: "";
 }
+.section-feed-trending::-webkit-scrollbar {
+  width: 0 !important;
+}
 .section-feed-trending .feed {
-  width: 598px;
+  max-width: 598px;
+  width: 100%;
 }
 .section-feed-trending .trending {
   position: relative;
-  width: 350px;
+  max-width: 350px;
+  width: 100%;
   margin-right: 10px;
 }
 .feed {
   position: relative;
 }
 #home-bar {
+  position: sticky;
+  top: 0;
   box-sizing: border-box;
+  background-color: white;
   width: inherit;
   border: 1px solid #f1f1f1;
 }
@@ -245,7 +258,7 @@ body {
 }
 .tweet-content {
   display: flex;
-  width: 506px;
+  max-width: 506px;
   flex-direction: column;
 }
 .tweet-content input {
@@ -361,4 +374,7 @@ body {
   margin-top: 12px;
   width: inherit;
   border-radius: 25px;
+}
+
+@media screen and (max-width: 900px) {
 }
