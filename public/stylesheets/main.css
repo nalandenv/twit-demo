@@ -193,12 +193,11 @@ body {
   position: relative;
 }
 #home-bar {
-  position: fixed;
+  box-sizing: border-box;
   width: inherit;
   border: 1px solid #f1f1f1;
 }
 .home-content {
-  box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
   display: flex;
@@ -227,4 +226,79 @@ body {
 .home-content span svg {
   fill: black;
   width: 20px;
+}
+.new-tweet-container {
+  box-sizing: border-box;
+  display: flex;
+  width: inherit;
+  height: 118px;
+  border: 1px solid #f1f1f1;
+  border-top: none;
+  padding: 4px 16px 10px;
+}
+.dp {
+  margin-right: 12px;
+}
+.dp img {
+  width: 48px;
+  border-radius: 9999px;
+}
+.tweet-content {
+  display: flex;
+  width: 506px;
+  flex-direction: column;
+}
+.tweet-content input {
+  border: none;
+  padding: 0;
+  height: 56px;
+  font-size: 20px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 48px;
+}
+.tweet-content input:focus {
+  outline: none;
+}
+.left-link {
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 12px;
+  margin-left: -9px;
+}
+.left-link .link-outline {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 9999px;
+  width: 36px;
+  height: 36px;
+}
+.left-link .link-outline:hover {
+  background-color: rgba(15, 147, 228, 0.1);
+}
+.link-outline svg {
+  box-sizing: border-box;
+  width: 20px;
+  fill: rgb(29, 161, 242);
+}
+.tweet-btn-top {
+  font-size: 16px;
+  background-color: rgb(29, 161, 242);
+  font-family: "cherpBold";
+  color: white;
+  margin-top: 12px;
+  width: 78px;
+  height: 36px;
+  border: none;
+  border-radius: 9999px;
+  transition: all 200ms;
+  cursor: pointer;
+}
+.tweet-btn-top:hover {
+  background-color: rgb(15, 147, 228);
+  transition: all 200ms;
 }
