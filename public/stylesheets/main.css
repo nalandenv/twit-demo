@@ -375,6 +375,57 @@ body {
   width: inherit;
   border-radius: 25px;
 }
+.status-options {
+  display: flex;
+  margin-top: 12px;
+}
+.status-options .option {
+  display: flex;
+  width: 25%;
+  align-items: center;
+  fill: rgb(83, 100, 113);
+  color: rgb(83, 100, 113);
+  cursor: pointer;
+}
 
+.status-options .option p {
+  font-size: 14px;
+}
+.svg-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 9999px;
+  margin-right: 5px;
+}
+.svg-box svg {
+  box-sizing: border-box;
+  height: 20px;
+  width: 20px;
+}
+
+.blue:hover {
+  color: rgb(15, 147, 228);
+  fill: rgb(15, 147, 228);
+}
+.blue:hover .svg-box {
+  background-color: rgba(15, 147, 228, 0.1);
+}
+.green:hover {
+  color: rgb(23, 191, 99);
+  fill: rgb(23, 191, 99);
+}
+.green:hover .svg-box {
+  background-color: rgba(23, 191, 99, 0.1);
+}
+.red:hover {
+  color: rgb(224, 36, 94);
+  fill: rgb(224, 36, 94);
+}
+.red:hover .svg-box {
+  background-color: rgba(224, 36, 94, 0.1);
+}
 @media screen and (max-width: 900px) {
 }
