@@ -23,6 +23,7 @@ body {
 .container {
   display: flex;
   justify-content: center;
+  overflow: auto;
 }
 /* light mode */
 .light {
@@ -38,8 +39,9 @@ body {
 
 /* header - left section */
 .header {
-  /* width: 275px; */
+  position: relative;
   flex: 3;
+  overflow-y: auto;
   display: flex;
   justify-content: flex-end;
 }
@@ -168,7 +170,7 @@ body {
 }
 .main-body {
   display: flex;
-  content: "";
+  position: relative;
   flex: 7;
   border-radius: 20px;
   height: 100vh;
@@ -183,11 +185,16 @@ body {
   width: 598px;
 }
 .section-feed-trending .trending {
+  position: relative;
   width: 350px;
   margin-right: 10px;
 }
+.feed {
+  position: relative;
+}
 #home-bar {
-  position: sticky;
+  position: fixed;
+  width: inherit;
   border: 1px solid #f1f1f1;
 }
 .home-content {
