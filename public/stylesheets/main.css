@@ -33,11 +33,13 @@ body {
 .dark {
   background-color: #000000;
   color: #ffffff;
+  fill: #ffffff;
 }
 
 /* header - left section */
 .header {
-  width: 275px;
+  /* width: 275px; */
+  flex: 3;
   display: flex;
   justify-content: flex-end;
 }
@@ -83,6 +85,7 @@ body {
   box-sizing: border-box;
   font-family: "cherpRegular";
   padding: 12px;
+  margin: 4px 0;
   line-height: 24px;
   border-radius: 9999px;
   cursor: pointer;
@@ -120,14 +123,7 @@ body {
   background-color: rgb(15, 147, 228);
   transition: all 200ms;
 }
-.placeholder {
-  content: "";
-  margin-left: 20px;
-  background-color: #ebe8e8;
-  border-radius: 20px;
-  width: 990px;
-  height: 100vh;
-}
+
 .profile {
   width: 100%;
   height: 64px;
@@ -169,4 +165,59 @@ body {
   height: 1.25em;
   align-self: center;
   justify-self: end;
+}
+.main-body {
+  display: flex;
+  content: "";
+  flex: 7;
+  border-radius: 20px;
+  height: 100vh;
+}
+.section-feed-trending {
+  display: flex;
+  justify-content: space-between;
+  width: 990px;
+  content: "";
+}
+.section-feed-trending .feed {
+  width: 598px;
+}
+.section-feed-trending .trending {
+  width: 350px;
+  margin-right: 10px;
+}
+#home-bar {
+  position: sticky;
+  border: 1px solid #f1f1f1;
+}
+.home-content {
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 0 16px;
+  height: 53px;
+}
+.home-content h4 {
+  color: rgb(15, 20, 25);
+  font-size: 20px;
+  font-family: "cherpBold";
+}
+.home-content span {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  border-radius: 9999px;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  transition: all 200ms;
+}
+.home-content span:hover {
+  background-color: #f1f1f1;
+  transition: all 200ms;
+}
+.home-content span svg {
+  fill: black;
+  width: 20px;
 }
