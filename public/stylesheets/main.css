@@ -175,7 +175,7 @@ body {
 .main-body {
   display: flex;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   flex: 7;
   border-radius: 20px;
   height: 100vh;
@@ -189,7 +189,7 @@ body {
   content: "";
 }
 .section-feed-trending::-webkit-scrollbar {
-  width: 0 !important;
+  width: 0;
 }
 .section-feed-trending .feed {
   max-width: 598px;
@@ -210,7 +210,8 @@ body {
   box-sizing: border-box;
   background-color: white;
   width: inherit;
-  border: 1px solid #f1f1f1;
+  border: 1px solid #f7f7f7;
+  border-top: none;
 }
 .home-content {
   justify-content: space-between;
@@ -245,7 +246,6 @@ body {
 .new-tweet-container {
   box-sizing: border-box;
   display: flex;
-  width: inherit;
   height: 118px;
   border: 1px solid #f1f1f1;
   border-top: none;
@@ -260,6 +260,7 @@ body {
 }
 .tweet-content {
   display: flex;
+  width: 100%;
   max-width: 506px;
   flex-direction: column;
 }
@@ -270,9 +271,11 @@ body {
   font-size: 20px;
 }
 .buttons {
-  display: flex;
-  justify-content: space-between;
   box-sizing: border-box;
+  width: inherit;
+  display: flex;
+  max-width: 506px;
+  justify-content: space-between;
   height: 48px;
 }
 .tweet-content input:focus {
