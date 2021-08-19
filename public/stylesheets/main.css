@@ -178,7 +178,7 @@ body {
 }
 .section-feed-trending {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   overflow-y: scroll;
   justify-content: space-between;
   max-width: 990px;
@@ -325,6 +325,10 @@ body {
   border-top: none;
   padding: 12px 16px;
   display: flex;
+  cursor: pointer;
+}
+.tweet-data:hover {
+  background-color: #f1f1f1;
 }
 .dp-tweet {
   margin-right: 12px;
@@ -333,6 +337,7 @@ body {
   width: 48px;
   border-radius: 999px;
 }
+
 .user-id {
   display: flex;
 }
@@ -350,6 +355,9 @@ body {
   margin-right: 10px;
   font-family: "cherpBold";
   align-items: center;
+}
+.user-id h3:hover {
+  text-decoration: underline;
 }
 .user-id .username {
   color: rgb(83, 100, 113);
@@ -433,13 +441,61 @@ body {
 .new-tweet-icon {
   display: none;
 }
-
+.trending {
+  display: flex;
+  margin-left: 30px;
+  flex-direction: column;
+}
+#search-bar {
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 53px;
+  padding: 4px 0;
+  margin-bottom: 12px;
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 9999px;
+}
+#search-bar .search-logo-div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 43px;
+  width: 100%;
+  padding-left: 12px;
+}
+.search-logo-div svg {
+  height: 19px;
+}
+#search-bar input {
+  flex: 6;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+#search-bar:focus-within {
+  background-color: white;
+  border-color: rgb(15, 147, 228);
+  fill: rgb(15, 147, 228);
+}
+@media screen and (max-width: 900px) {
+  .trending {
+    display: none;
+  }
+}
 @media screen and (max-width: 800px) {
   .header {
     flex: 1;
     overflow: hidden;
   }
-
   .nav-top {
     min-width: 64px;
     text-align: center;
