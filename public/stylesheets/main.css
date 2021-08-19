@@ -26,11 +26,7 @@ body {
   justify-content: center;
   overflow: hidden;
 }
-/* light mode */
-.light {
-  background-color: #ffffff;
-  color: #000000;
-}
+
 /* dark mode */
 .dark {
   background-color: #000000;
@@ -175,13 +171,14 @@ body {
 .main-body {
   display: flex;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   flex: 7;
   border-radius: 20px;
   height: 100vh;
 }
 .section-feed-trending {
   display: flex;
+  flex-direction: column;
   overflow-y: scroll;
   justify-content: space-between;
   max-width: 990px;
@@ -207,6 +204,7 @@ body {
 #home-bar {
   position: sticky;
   top: 0;
+  align-self: flex-start;
   box-sizing: border-box;
   background-color: white;
   width: inherit;
@@ -471,6 +469,11 @@ body {
   }
   .new-tweet-icon {
     display: block;
+  }
+  .profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   .profile-content {
     width: 64px;
