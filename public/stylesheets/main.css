@@ -26,13 +26,6 @@ body {
   justify-content: center;
 }
 
-/* dark mode */
-.dark {
-  background-color: #000000;
-  color: #ffffff;
-  fill: #ffffff;
-}
-
 /* header - left section */
 .header {
   position: relative;
@@ -177,7 +170,6 @@ body {
 }
 .section-feed-trending {
   display: flex;
-  height: 100vh;
   flex-direction: row;
   overflow-y: scroll;
   justify-content: space-between;
@@ -192,7 +184,6 @@ body {
   max-width: 598px;
   width: 100%;
   display: flex;
-  min-height: 9999px;
   flex-direction: column;
 }
 .section-feed-trending .trending {
@@ -202,12 +193,12 @@ body {
   margin-right: 10px;
 }
 #home-bar {
-  position: sticky;
+  position: fixed;
   top: 0;
   align-self: flex-start;
   box-sizing: border-box;
   background-color: white;
-  width: inherit;
+  width: 598px;
   border: 1px solid #f7f7f7;
   border-top: none;
 }
@@ -245,6 +236,7 @@ body {
   box-sizing: border-box;
   display: flex;
   height: 118px;
+  margin-top: 53px;
   border: 1px solid #f1f1f1;
   border-top: none;
   padding: 4px 16px 10px;
@@ -443,21 +435,27 @@ body {
   display: none;
 }
 .trending {
-  display: block;
+  position: relative;
+  height: 1000px;
+  overflow: hidden;
   margin-left: 30px;
-  /* flex-direction: column; */
 }
-#search-bar {
-  position: sticky;
+#search-bar-div {
+  position: fixed;
   top: 0;
+  z-index: 3;
   align-self: flex-start;
   box-sizing: border-box;
+  width: 350px;
+  height: 53px;
+  padding: 4px 0;
+  background-color: white;
+  margin-bottom: 12px;
+}
+#search-bar {
   display: flex;
   width: 100%;
   flex-direction: row;
-  height: 53px;
-  padding: 4px 0;
-  margin-bottom: 12px;
   background-color: #f1f1f1;
   border: 1px solid #f1f1f1;
   border-radius: 9999px;
@@ -490,6 +488,7 @@ body {
 .top-container-trending {
   display: block;
   padding-top: 10px;
+  margin-top: 64px;
   background-color: #f1f1f1;
   border-radius: 15px;
 }
@@ -614,7 +613,10 @@ body {
 
   .feed {
     width: 100%;
-    max-width: 100% !important;
+    height: 100%;
+  }
+  #home-bar {
+    width: 90%;
   }
   #tweet-btn {
     width: 50px;
