@@ -64,7 +64,6 @@ body {
   transition: all 200ms;
 }
 #twitter-logo {
-  box-sizing: border-box;
   padding: 20%;
   fill: rgb(29, 161, 242);
 }
